@@ -1,11 +1,13 @@
-
+# Developer Guide
 
 ## Tools and Technology Used:
-| ID | Tool Name | Tool Type | Links | Comments |
+
+| ID | Tool Name | Tool Type | Doc | Comments |
 |:---|:---------:|----------:|:-----:|---------:|
-| 1. | **Next.js** | React Framework | [Link]() | NIL |
-| 2. | **Shadcn** | UI Design | [Link](https://ui.shadcn.com/docs/installation) | NIL |
-| 2. | **<Tool Name>** | NIL | [Link]() | NIL |
+| 1. | **[Next.js](https://nextjs.org/docs)** | React Framework | [Learn](https://nextjs.org/learn) | [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) |
+| 2. | **[Shadcn]()** | UI Design | [Install](https://ui.shadcn.com/docs/installation) | NIL |
+| 3. | **[Stock Widgets](https://www.tradingview.com/widget-docs/widgets/)** | NIL | [Link]() | NIL |
+| x. | **[NIL]()** | NIL | [Link]() | NIL |
 
 
 ## How To Develop:
@@ -42,3 +44,9 @@
 
 4. Add VSCode extension:
     1. ES7+ React/Redux/React-Native snippets
+
+5. Deploy in CLoudFlare:
+    1. Ref: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#deploy-an-existing-nextjs-project-on-workers
+    ```zsh
+    npm i @opennextjs/cloudflare@latest
+    ```
