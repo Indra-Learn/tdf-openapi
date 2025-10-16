@@ -79,30 +79,69 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
     belowLineFillColorFallingBottom: 'rgba(41, 98, 255, 0)',
     symbolActiveColor: 'rgba(15, 237, 190, 0.05)', // highlight color for active symbol
     tabs: [
+        // {
+        //     title: 'INDICES',
+        //     symbols: [
+        //         { s: '', d: '' },
+        //     ],
+        // },
         {
-            title: 'Financial',
+            title: 'Sensex',
             symbols: [
-                { s: 'NYSE:JPM', d: 'JPMorgan Chase' },
-                { s: 'NYSE:WFC', d: 'Wells Fargo Co New' },
-                { s: 'NYSE:BAC', d: 'Bank Amer Corp' },
-                { s: 'NYSE:HSBC', d: 'Hsbc Hldgs Plc' },
-                { s: 'NYSE:C', d: 'Citigroup Inc' },
-                { s: 'NYSE:MA', d: 'Mastercard Incorporated' },
+                { s: 'BSE:RELIANCE', d: 'Reliance Industries' },
+                { s: 'BSE:HDFCBANK', d: 'HDFC Bank' },
+                { s: 'BSE:BHARTIARTL', d: 'Bharti Airtel' },
+                { s: 'BSE:TCS', d: 'TCS' },
+                { s: 'BSE:ICICIBANK', d: 'ICICI Bank' },
+                { s: 'BSE:SBIN', d: 'SBI Bank' },
+                { s: 'BSE:BAJFINANCE', d: 'Bajaj Finance Limited' },
+                { s: 'BSE:INFY', d: 'Infosys Limited' },
+                { s: 'BSE:HINDUNILVR', d: 'Hindustan Unilever Limited' },
+                { s: 'BSE:LT', d: 'Larsen & Toubro Limited' },
+                { s: 'BSE:MARUTI', d: 'Maruti Suzuki India Limited' },
+                { s: 'BSE:ITC', d: 'ITC Limited' },
+                { s: 'BSE:M_M', d: 'Mahindra & Mahindra Limited' },
+                { s: 'BSE:KOTAKBANK', d: 'Kotak Mahindra Bank' },
+                { s: 'BSE:HCLTECH', d: 'HCL Technologies Limited' },
+                { s: 'BSE:SUNPHARMA', d: 'Sun Pharma' },
+                { s: 'BSE:AXISBANK', d: 'AXIS Bank' },
+                { s: 'BSE:ULTRACEMCO', d: 'UltraTech Cement' },
+                { s: 'BSE:ETERNAL', d: 'Eternal Limited' },
+                { s: 'BSE:BAJAJFINSV', d: 'Bajaj Dinserv Limited' },
+                { s: 'BSE:NTPC', d: 'NTPC Limited' },
+                { s: 'BSE:TITAN', d: 'Titan Company Limited' },
+                { s: 'BSE:ADANIPORTS', d: 'Adani Ports & SEZ' },
+                { s: 'BSE:POWERGRID', d: 'Power Grid'},
+                { s: 'BSE:NESTLEIND', d: 'Nestle India Ltd.' },
+                { s: 'BSE:ASIANPAINT', d: 'Asian Paints Ltd.' },
+                { s: 'BSE:TATASTEEL', d: 'Tata Steel' },
+                { s: 'BSE:TATAMOTORS', d: 'Tata Motors' },
+                { s: 'BSE:TECHM', d: 'Tech Mahindra Limited' },
+                { s: 'BSE:INDUSINDBK', d: 'IndusInd Bank Ltd.' },
             ],
         },
         {
-            title: 'Technology',
+            title: 'India ETFs',
             symbols: [
-                { s: 'NASDAQ:AAPL', d: 'Apple' },
-                { s: 'NASDAQ:GOOGL', d: 'Alphabet' },
-                { s: 'NASDAQ:MSFT', d: 'Microsoft' },
-                { s: 'NASDAQ:FB', d: 'Meta Platforms' },
-                { s: 'NYSE:ORCL', d: 'Oracle Corp' },
-                { s: 'NASDAQ:INTC', d: 'Intel Corp' },
+                { s: 'BSE:NIFTYIETF', d: 'ICICI Prudential Nifty 50 ETF' },
+                { s: 'BSE:NEXT50', d: 'Mirae Asset Nifty Next 50 ETF' },
+                { s: 'BSE:BANKIETF', d: 'ICICI Prudential Nifty Bank ETF' },
+                { s: 'BSE:MIDQ50ADD', d: 'DSP Nifty Midcap 150 Quality 50 ETF' },
+                { s: 'BSE:HDFCSML250', d: 'HDFC Nifty Smallcap 250 ETF' },
+                { s: 'NSE:GROWWRAIL', d: 'Groww Nifty India Railways PSU ETF' },
+                { s: 'BSE:AUTOIETF', d: 'ICICI Prudential Nifty Auto ETF' },
+                { s: 'BSE:CONSUMIETF', d: 'ICICI Prudential Nifty India Consumption ETF' },
+                { s: 'BSE:HEALTHIETF', d: 'ICICI Prudential Nifty Healthcare ETF' },
+                { s: 'NSE:MODEFENCE', d: 'Motilal Oswal Nifty India Defence ETF' },
+                { s: 'BSE:METAL', d: 'Mirae Asset Nifty Metal ETF' },
+                { s: 'BSE:HNGSNGBEES', d: 'Nippon India ETF Hang Seng BeES' },
+                { s: 'BSE:MON100', d: 'Motilal Oswal NASDAQ 100 ETF' },
+                { s: 'BSE:SILVER', d: 'Aditya Birla Sunlife Silver ETF' },
+                { s: 'BSE:GOLDBEES', d: 'Nippon India ETF Gold BeES' },
             ],
         },
         {
-            title: 'Services',
+            title: 'Global Markets',
             symbols: [
                 { s: 'NASDAQ:AMZN', d: 'Amazon' },
                 { s: 'NYSE:BABA', d: 'Alibaba Group Hldg Ltd' },
@@ -121,7 +160,7 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
 };
 
 export const HEATMAP_WIDGET_CONFIG = {
-    dataSource: 'SPX500',
+    dataSource: 'SENSEX',
     blockSize: 'market_cap_basic',
     blockColor: 'change',
     grouping: 'sector',
@@ -161,7 +200,7 @@ export const MARKET_DATA_WIDGET_CONFIG = {
     backgroundColor: '#0F0F0F',
     symbolsGroups: [
         {
-            name: 'Financial',
+            name: 'Long-Term Equity',
             symbols: [
                 { name: 'NYSE:JPM', displayName: 'JPMorgan Chase' },
                 { name: 'NYSE:WFC', displayName: 'Wells Fargo Co New' },
@@ -172,7 +211,7 @@ export const MARKET_DATA_WIDGET_CONFIG = {
             ],
         },
         {
-            name: 'Technology',
+            name: 'Short-Term Equity',
             symbols: [
                 { name: 'NASDAQ:AAPL', displayName: 'Apple' },
                 { name: 'NASDAQ:GOOGL', displayName: 'Alphabet' },
@@ -183,7 +222,7 @@ export const MARKET_DATA_WIDGET_CONFIG = {
             ],
         },
         {
-            name: 'Services',
+            name: 'ETF',
             symbols: [
                 { name: 'NASDAQ:AMZN', displayName: 'Amazon' },
                 { name: 'NYSE:BABA', displayName: 'Alibaba Group Hldg Ltd' },
