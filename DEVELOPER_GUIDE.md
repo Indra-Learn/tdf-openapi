@@ -44,3 +44,9 @@
 
 4. Add VSCode extension:
     1. ES7+ React/Redux/React-Native snippets
+
+5. Deploy in CLoudFlare:
+    1. Ref: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#deploy-an-existing-nextjs-project-on-workers
+    ```zsh
+    npm i @opennextjs/cloudflare@latest
+    ```
