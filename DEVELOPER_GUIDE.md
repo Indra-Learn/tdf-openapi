@@ -48,5 +48,9 @@
 5. Deploy in CLoudFlare:
     1. Ref: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#deploy-an-existing-nextjs-project-on-workers
     ```zsh
-    npm i @opennextjs/cloudflare@latest
+    npm install --save-dev @opennextjs/cloudflare@latest
+    npm install wrangler --save-dev
+
+    npm run preview:worker
+    npm run deploy:worker
     ```
