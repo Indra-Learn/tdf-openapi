@@ -10,3 +10,4 @@ We offer an AI powered and smart trading app. You can track real time stock pric
     cd tdf-openapi
     ```
 2. Open [http://localhost:3000](http://localhost:3000)
+3. Open [Prod Link](https://tdf-openapi.info-easycloudapi.workers.dev)

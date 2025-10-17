@@ -6,7 +6,8 @@
 |:---|:---------:|----------:|:-----:|---------:|
 | 1. | **[Next.js](https://nextjs.org/docs)** | React Framework | [Learn](https://nextjs.org/learn) | [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) |
 | 2. | **[Shadcn]()** | UI Design | [Install](https://ui.shadcn.com/docs/installation) | NIL |
-| 3. | **[Stock Widgets](https://www.tradingview.com/widget-docs/widgets/)** | NIL | [Link]() | NIL |
+| 3. | **[TradingView Widgets](https://www.tradingview.com/widget-docs/widgets/)** | Market Analysis | [Link]() | NIL |
+| 4. | **[cloudflare](https://www.cloudflare.com/en-in/)** | Server Deployment | [Dev Doc](https://developers.cloudflare.com/workers/) | NIL |
 | x. | **[NIL]()** | NIL | [Link]() | NIL |
 
 
@@ -34,12 +35,16 @@
     npm run dev
     ```
 
-3. Setup Shadcn for Design
+3. Setup Shadcn for Design and Other packages:
     ```zsh
     npx shadcn@latest init
     npx shadcn@latest add button
     npx shadcn@latest add dropdown-menu
     npx shadcn@latest add avatar
+
+    npm install react-hook-form
+
+    npx shadcn@latest add input label select
     ```
 
 4. Add VSCode extension:
