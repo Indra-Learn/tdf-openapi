@@ -3,11 +3,13 @@
 ## Tools and Technology Used:
 
 | ID | Tool Name | Tool Type | Doc | Comments |
-|:---|:---------:|----------:|:-----:|---------:|
+|:---|:---------:|----------:|----:|---------:|
 | 1. | **[Next.js](https://nextjs.org/docs)** | React Framework | [Learn](https://nextjs.org/learn) | [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) |
 | 2. | **[Shadcn]()** | UI Design | [Install](https://ui.shadcn.com/docs/installation) | NIL |
 | 3. | **[TradingView Widgets](https://www.tradingview.com/widget-docs/widgets/)** | Market Analysis | [Link]() | NIL |
-| 4. | **[cloudflare](https://www.cloudflare.com/en-in/)** | Server Deployment | [Dev Doc](https://developers.cloudflare.com/workers/) | NIL |
+| 4. | **[cloudflare](https://www.cloudflare.com/en-in/)** | Server Deployment | 1. [Dev Doc](https://developers.cloudflare.com/workers/)</br>2. [console](https://dash.cloudflare.com/389ac08ebd30bce3aaafaf686a949ed0/home/developer-platform) | NIL |
+| x. | **[AWS]()** | NIL | [Link]() | NIL |
+| x. | **[MongoDB]()** | NIL | [console](https://cloud.mongodb.com/v2/67551e34633cb7760d4506e2#/overview) | NIL |
 | x. | **[NIL]()** | NIL | [Link]() | NIL |
 
 
@@ -18,7 +20,7 @@
     2. github: https://github.com/adrianhajdin/signalist_stock-tracker-app/tree/main
     3. asset: https://jsmastery.com/video-kit/7df14775-f594-4367-9941-9abce7d82de2?utm_source=youtube&utm_campaign=stocks-inngest
 
-2. After installing **node.js**, create `next.js` project setup by below command:
+2. After installing **[node.js](https://nodejs.org/en/download)**, create `next.js` project setup by below command:
     ```shell
     npx create-next-app
 
@@ -49,6 +51,7 @@
 
 4. Add VSCode extension:
     1. ES7+ React/Redux/React-Native snippets
+    2. Prettier
 
 5. Deploy in CLoudFlare:
     1. Ref: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#deploy-an-existing-nextjs-project-on-workers
@@ -59,3 +62,19 @@
     npm run preview:worker
     npm run deploy:worker
     ```
+
+6. Set-up MongoDB:
+    1. Install MongoDB
+    ```zsh
+    npm install mongodb mongoose
+    ```
+    2. copy the Mongodb URI and paste into `.env` file
+    ```zsh
+    MONGODB_URI=mongodb+srv://infoeasycloudapi:<db-password>@tdf-mongodb-cluster.xmoc8.mongodb.net/?retryWrites=true&w=majority&appName=tdf-mongodb-cluster
+    ```
+    3. Visit `Network Access` to modify your settings and add your current IP address.  
+    4. Test the DB connection
+    ```zsh
+    npm run test:db
+    ```
+`

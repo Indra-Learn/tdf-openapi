@@ -5,6 +5,7 @@ import SelectField from "@/components/forms/SelectField";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { INVESTMENT_GOALS, PREFERRED_INDUSTRIES, RISK_TOLERANCE_OPTIONS } from "@/lib/constants";
+import FooterLink from "@/components/forms/FooterLink";
 import { Select } from "@radix-ui/react-select";
 import { Mingzat } from "next/font/google";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -120,6 +121,9 @@ const SignUp = () => {
             <Button type="submit" disabled={isSubmitting} className="yellow-btn w-full mt-5">
                 {isSubmitting ? 'Creating Account..' : 'Start Your Investment Journey'}
             </Button>
+
+            <FooterLink text="Already have an account?" linkText="Sign in" href="/sign-in" />
+            
         </form>
       </>
     )

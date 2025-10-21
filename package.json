@@ -10,7 +10,8 @@
     "build:worker": "opennextjs-cloudflare build",
     "dev:worker": "wrangler dev --port 8771",
     "preview:worker": "npm run build:worker && npm run dev:worker",
-    "deploy:worker": "npm run build:worker && wrangler deploy"
+    "deploy:worker": "npm run build:worker && wrangler deploy",
+    "test:db": "node ./scripts/test-db.mjs"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
@@ -21,6 +22,8 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.545.0",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2",
     "next": "15.5.5",
     "react": "19.1.0",
     "react-dom": "19.1.0",
