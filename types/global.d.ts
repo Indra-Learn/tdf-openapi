@@ -7,6 +7,7 @@ declare global {
     type SignUpFormData = {
         fullName: string;
         email: string;
+        mobileNumber: string;
         password: string;
         country: string;
         investmentGoals: string;

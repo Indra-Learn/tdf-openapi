@@ -4,7 +4,7 @@ import InputField from "@/components/forms/InputField";
 import SelectField from "@/components/forms/SelectField";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { INVESTMENT_GOALS } from "@/lib/constants";
+import { INVESTMENT_GOALS, PREFERRED_INDUSTRIES, RISK_TOLERANCE_OPTIONS } from "@/lib/constants";
 import { Select } from "@radix-ui/react-select";
 import { Mingzat } from "next/font/google";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -59,6 +59,15 @@ const SignUp = () => {
             />
 
             <InputField 
+                name="mobileNumber"
+                label="Mobile Number"
+                placeholder="234 567 8901"
+                register={register}
+                error={errors.mobileNumber}
+                validation={{ required: 'Mobile number is required', pattern: /^\d{10}$/, message: 'Invalid mobile number' }}
+            />
+
+            <InputField 
                 name="password"
                 label="Password"
                 placeholder="Enter a strong password"
@@ -85,6 +94,26 @@ const SignUp = () => {
                 options={INVESTMENT_GOALS}
                 control={control}
                 error={errors.investmentGoals}
+                required
+            />
+
+            <SelectField 
+                name="riskTolerance"
+                label="Risk Tolerance"
+                placeholder="Select your risk level"
+                options={RISK_TOLERANCE_OPTIONS}
+                control={control}
+                error={errors.riskTolerance}
+                required
+            />
+
+            <SelectField 
+                name="prefferedIndustry"
+                label="Preferred Industry"
+                placeholder="Select your preferred industry"
+                options={PREFERRED_INDUSTRIES}
+                control={control}
+                error={errors.preferredIndustry}
                 required
             />
 
