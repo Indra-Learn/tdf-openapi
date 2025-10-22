@@ -8,8 +8,9 @@
 | 2. | **[Shadcn]()** | UI Design | [Install](https://ui.shadcn.com/docs/installation) | NIL |
 | 3. | **[TradingView Widgets](https://www.tradingview.com/widget-docs/widgets/)** | Market Analysis | [Link]() | NIL |
 | 4. | **[cloudflare](https://www.cloudflare.com/en-in/)** | Server Deployment | 1. [Dev Doc](https://developers.cloudflare.com/workers/)</br>2. [console](https://dash.cloudflare.com/389ac08ebd30bce3aaafaf686a949ed0/home/developer-platform) | NIL |
-| x. | **[AWS]()** | NIL | [Link]() | NIL |
-| x. | **[MongoDB]()** | NIL | [console](https://cloud.mongodb.com/v2/67551e34633cb7760d4506e2#/overview) | NIL |
+| 5. | **[MongoDB]()** | NIL | [console](https://cloud.mongodb.com/v2/67551e34633cb7760d4506e2#/overview) | NIL |
+| 6. | **[Tailwind]()** | CSS Tool | 1. [Flowbite](https://flowbite.com/docs/typography/lists/)</br>2. [Shuffle](https://tailwind.build/classes) | NIL |
+| 7. | **[AWS]()** | NIL | [Link]() | NIL |
 | x. | **[NIL]()** | NIL | [Link]() | NIL |
 
 
@@ -47,6 +48,8 @@
     npm install react-hook-form
 
     npx shadcn@latest add input label select
+
+    // npm install bootstrap@5.3.8
     ```
 
 4. Add VSCode extension:
