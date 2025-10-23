@@ -4,6 +4,7 @@ export const NAV_ITEMS = [
     { href: '/search', label: 'Search' },
     { href: '/watchlist', label: 'Watchlist' },
     { href: '/strategies', label: 'Strategies' },
+    { href: '/algotrading', label: 'Algo Trading' },
 ]
 
 // Sign-up form select options
