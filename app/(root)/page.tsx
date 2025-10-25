@@ -8,8 +8,8 @@ const Home = () => {
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-1">
 
         {/* Home-Jumbotron */}
-        <section className="bg-center bg-no-repeat bg-[url('/images/6233237.jpg')] bg-gray-700 bg-blend-multiply mb-8">
-            <div className="mx-auto max-w-screen-xl text-center py-24 lg:py-48">
+        <section className="bg-center bg-cover bg-no-repeat bg-[url('/images/home-jumbotron-2.jpg')] bg-gray-300 bg-blend-multiply mb-4">
+            <div className="mx-auto max-w-screen-xl text-center py-24 lg:py-36">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">We invest in the world&apos;s potential</h1>
                 <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at TDF&apos;s Ticker we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
@@ -28,16 +28,24 @@ const Home = () => {
 
         {/* 1st Hero Section */}
         <div className="container mx-auto mt-1 flex items-center justify-center">
+
             <div className="text-white mt-1">
-                <p className="text-7xl font-bold">What we are offering,</p>
-                <p className="text-4xl font-semibold text-yellow-400 mt-4">An AI enabled Smart Ticker & Algo Trading</p>
-                <div className="w-48 h-2 border-b-4 border-purple-600 mt-1 mb-1"></div>
-                <p className="text-2xl text-gray-400 mt-6">You can do stock analysis using AI, automate the trading with powerful Algo and develop new strategies and back test it in longer historical data.</p>
+            <p className="text-7xl font-bold">What we are offering,</p>
+            <p className="text-4xl font-semibold text-yellow-400 mt-4">
+                An AI enabled <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 bg-clip-text text-transparent">Smart Ticker</span> & <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">Algo Trading</span>
+            </p>
+            <p className="text-4xl font-semibold text-yellow-400 mt-4">
+                with <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">Portfolio Management</span>
+            </p>
+            <div className="w-48 h-2 border-b-4 border-purple-600 mt-1 mb-1"></div>
+            <p className="text-2xl text-gray-400 mt-6">You can do stock analysis using AI, automate the trading with powerful Algo and develop new strategies and back test it in longer historical data.</p>
             </div>
             <div>
                 <img className="max-w-2xl h-130" src="https://i.ibb.co/z8kWxyL/pexels-andrea-piacquadio-3979198-removebg-preview.png" alt="Image" />
             </div>
         </div>
+
+
 
         {/* 2nd Hero Section */}
         {/* 
@@ -103,10 +111,32 @@ const Home = () => {
             <p className="text-gray-300">Invest in gold, silver, oil and other commodities to hedge against market volatility.</p>
             </div>
 
+            {/* Category 7 */}
+            <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors cursor-pointer">
+            <img className="w-20 h-20 mb-4" src="/images/digital-solar.jpeg" alt="Digital Solar" />
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-3">Digital Solar</h3>
+            <p className="text-gray-300">Invest in digital solar.</p>
+            </div>
+
+            {/* Category 8 */}
+            <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors cursor-pointer">
+            <img className="w-20 h-20 mb-4" src="/images/fin-instru.webp" alt="fin" />
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-3">Invoice Discounting</h3>
+            <p className="text-gray-300">Invest in invoice discounting.</p>
+            </div>
+
+            {/* Category 9 */}
+            <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors cursor-pointer">
+            <img className="w-20 h-20 mb-4" src="/images/fin-instru.webp" alt="fin" />
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-3">Other Investemens</h3>
+            <p className="text-gray-300">SLB (Security Lending & Borrowing)</p>
+            <p className="text-gray-300">SFT (Specialized Investment Funds)</p>
+            </div>
+
         </div>
         </div>
 
-        {/* Investment Categories Section */}
+        {/* Start your investment */}
         <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mt-8 mb-8">
             <a href="#" className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
                 <svg className="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">

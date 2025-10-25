@@ -11,6 +11,9 @@
 | 5. | **[MongoDB]()** | NIL | [console](https://cloud.mongodb.com/v2/67551e34633cb7760d4506e2#/overview) | NIL |
 | 6. | **[Tailwind]()** | CSS Tool | 1. [Flowbite](https://flowbite.com/docs/typography/lists/)</br>2. [Shuffle](https://tailwind.build/classes) | NIL |
 | 7. | **[AWS]()** | NIL | [Link]() | NIL |
+| 8. | **[Better-Auth](https://www.better-auth.com)** | NIL | [Link]() | NIL |
+| 9. | **[Inngest](https://www.inngest.com)** | NIL | 1. [Console](https://app.inngest.com/env/production/onboarding/create-app) | NIL |
+| 10. | **[Gemini]()** | NIL | 1. [Console](https://aistudio.google.com) | NIL |
 | x. | **[NIL]()** | NIL | [Link]() | NIL |
 
 
@@ -50,6 +53,11 @@
     npx shadcn@latest add input label select
 
     // npm install bootstrap@5.3.8
+
+    npm install better-auth
+
+    npx inngest-cli@latest dev
+    npm install inngest
     ```
 
 4. Add VSCode extension:

@@ -1,10 +1,74 @@
 export const NAV_ITEMS = [
     // { href: '/', label: 'Home' },
+    {
+        href: "/products",
+        label: "Products",
+        megaMenu: [
+        {
+            title: "Trading Tools",
+            icon: "📊",
+            items: [
+            {
+                href: "/products/smart-ticker",
+                label: "Smart Ticker",
+                description: "AI-powered stock analysis"
+            },
+            {
+                href: "/products/algo-trading",
+                label: "Algo Trading",
+                description: "Automated trading strategies"
+            },
+            {
+                href: "/products/portfolio",
+                label: "Portfolio Management",
+                description: "Manage your investments"
+            },
+            {
+                href: "/products/ai_advisor",
+                label: "AI Advisor",
+                description: "AI-driven investment advice & insights"
+            }
+            ]
+        },
+        {
+            title: "Analytics",
+            icon: "📈",
+            items: [
+            {
+                href: "/products/backtesting",
+                label: "Backtesting",
+                description: "Test strategies on historical data"
+            },
+            {
+                href: "/products/reports",
+                label: "Reports",
+                description: "Detailed market analysis"
+            }
+            ]
+        },
+        {
+            title: "Resources",
+            icon: "📚",
+            items: [
+            {
+                href: "/products/tutorials",
+                label: "Tutorials",
+                description: "Learn to trade effectively"
+            },
+            {
+                href: "/products/support",
+                label: "Support",
+                description: "Get help when you need it"
+            }
+            ]
+        }
+        ]
+    },
     { href: '/dashboard', label: 'Dashboard' },
     { href: '/search', label: 'Search' },
     { href: '/watchlist', label: 'Watchlist' },
-    { href: '/strategies', label: 'Strategies' },
-    { href: '/algotrading', label: 'Algo Trading' },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" }
 ]
 
 // Sign-up form select options
