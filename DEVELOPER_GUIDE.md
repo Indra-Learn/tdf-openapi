@@ -58,6 +58,9 @@
 
     npx inngest-cli@latest dev
     npm install inngest
+
+    npm install nodemailer
+    npm i --save-dev @types/nodemailer
     ```
 
 4. Add VSCode extension:

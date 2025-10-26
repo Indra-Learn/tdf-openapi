@@ -190,9 +190,47 @@ const Home = () => {
                 </a>
                 <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Stock analysis tools</h2>
                 <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4"></p>
-                    <ul className="mb-5 space-y-2 text-gray-500 list-disc list-inside dark:text-gray-400">
-                        <li><a href="https://in.tradingview.com/screener/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank" >Tradingview</a></li>
-                        <li><a href="https://www.screener.in" className="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank" >Screener</a></li>
+                    <ul className="mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+                        <li>
+                            <a 
+                            href="https://in.tradingview.com/screener/" 
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Tradingview
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="https://www.screener.in" 
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Screener
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="https://pulse.zerodha.com" 
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Pulse by Zerodha
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="https://www.screener.in" 
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Coming Soon
+                            </a>
+                        </li>
                     </ul>
                 <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read more
                     <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

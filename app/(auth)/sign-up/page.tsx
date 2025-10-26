@@ -9,8 +9,14 @@ import FooterLink from "@/components/forms/FooterLink";
 import { Select } from "@radix-ui/react-select";
 import { Mingzat } from "next/font/google";
 import { SubmitHandler, useForm } from "react-hook-form";
+import {signUpWithEmail} from "@/lib/actions/auth.actions";
+import {useRouter} from "next/navigation";
+import {toast} from "sonner";
+
 
 const SignUp = () => {
+    const router = useRouter()
+
     const {
         register,
         handleSubmit,
@@ -21,7 +27,7 @@ const SignUp = () => {
             fullName: '',
             email: '',
             password: '',
-            country: '',
+            country: 'India',
             investmentGoals: 'Growth',
             riskTolerance: 'Medium',
             preferredIndustry: 'Technology'
@@ -31,11 +37,16 @@ const SignUp = () => {
 
     const onSubmit = async (data: SignUpFormData) => {
         try {
-            console.log('Sign Up Form Data:', data);
-        } catch (error) {
-            console.error('Error during sign-up:', error);
+            const result = await signUpWithEmail(data);
+            if(result.success) router.push('/');
+        } catch (e) {
+            console.error(e);
+            toast.error('Sign up failed', {
+                description: e instanceof Error ? e.message : 'Failed to create an account.'
+            })
         }
     }
+
 
     return (
       <>
@@ -86,6 +97,15 @@ const SignUp = () => {
                 register={register}
                 error={errors.password}
                 validation={{ required: 'Password is required', minLength: 8 }}
+            />
+
+            <InputField 
+                name="country"
+                label="Country"
+                placeholder="India"
+                register={register}
+                error={errors.country}
+                validation={{ required: 'Country is required', minLength: 2 }}
             />
 
             <SelectField 
