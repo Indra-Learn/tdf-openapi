@@ -26,6 +26,7 @@ const SignUp = () => {
         defaultValues: {
             fullName: '',
             email: '',
+            mobileNumber: '',
             password: '',
             country: 'India',
             investmentGoals: 'Growth',
@@ -67,7 +68,7 @@ const SignUp = () => {
                 placeholder="john.doe@gmail.com"
                 register={register}
                 error={errors.email}
-                validation={{ required: 'Email is required', pattern: /^\w+@\w+\.\w+$/, message: 'Invalid email address' }}
+                // validation={{ required: 'Email name is required', message: 'Email address is required' }}
             />
 
             <InputField 
@@ -89,7 +90,7 @@ const SignUp = () => {
                 validation={{ required: 'Password is required', minLength: 8 }}
             />
 
-            <InputField 
+            {/* <InputField 
                 name="confirmPassword"
                 label="Confirm Password"
                 placeholder="Confirm your password"
@@ -97,7 +98,7 @@ const SignUp = () => {
                 register={register}
                 error={errors.password}
                 validation={{ required: 'Password is required', minLength: 8 }}
-            />
+            /> */}
 
             <InputField 
                 name="country"

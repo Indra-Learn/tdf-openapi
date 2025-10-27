@@ -53,14 +53,6 @@
     npx shadcn@latest add input label select
 
     // npm install bootstrap@5.3.8
-
-    npm install better-auth
-
-    npx inngest-cli@latest dev
-    npm install inngest
-
-    npm install nodemailer
-    npm i --save-dev @types/nodemailer
     ```
 
 4. Add VSCode extension:
@@ -92,3 +84,19 @@
     npm run test:db
     ```
 `
+
+7. Set-up Auth:
+    1. Install packages
+    ```zsh
+    npm install better-auth
+
+    npx inngest-cli@latest dev
+    npm install inngest
+
+    npm install nodemailer
+    npm i --save-dev @types/nodemailer
+    ```
+    2. create Google App password
+        1. open "https://myaccount.google.com/security"
+        2. Make sure "2 step verification" is enabled under "How you sign in to Google"
+        3. then click "https://myaccount.google.com/apppasswords" to generate 16 digit app password.
